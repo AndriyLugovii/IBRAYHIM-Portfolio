@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.wrap{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(14, 1, 32);
+    .homepage{
+        height: 100vh;
+        width: 100%;
+        font-family: "Preahvihear", sans-serif;
+        .header{
+            height: 10vh;
+            width: 100%;
+            background-color: #1A0B2E;
+            display: flex;
+
+            .leftgate{
+                height: 10vh;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .rightgate{
+                height: 10vh;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        } 
+        .homecontenttop{
+            height: 50vh;
+            width: 100%;
+            padding-left: 300px;
+            padding-top: 30px;
+            display: flex;
+            .circle{
+                width: 400px;
+                height: 450px;
+                background-image: url(./img/Gradient.png);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .aboutme{
+                color: #fff;
+                .name{
+                    color: #7127BA;
+                }
+                
+
+
+            }
+            .infogate{
+                width: 600px;
+                height: 300px;
+                position: absolute;
+                top: 200px;
+                left: 750px;
+                a{
+                    color: #fff
+                }
+                h2{
+                    font-size: 50px;
+                    color: #fff;
+                    .cover{
+                        position: relative;
+                        color: #7127BA;
+                        
+                    }
+                    .cover::after{
+                        content: "";
+                        position: absolute;
+                        width: 113%;
+                        height: 90%;
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        left: -10px;
+                        top: 0px;
+                        transform: rotate(-8deg);
+                    }
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        .homecontentbot{
+            height: 40vh;
+            width: 100%;
+            padding-left: 350px;
+            background-color: rgb(14, 1, 32);
+            h2{
+                color: #fff;
+                font-size: 50px;
+            }
+            h4{
+                color: #fff;
+                font-size: 21px;
+                gap: 10px;
+                .facebook{
+                    color:#1877F2;
+                    
+                    a{
+                        color:#1877F2;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+    .cardpage{
+        width: 100%;
+        min-height: 80vh;
+        background-color: rgb(14, 1, 32);
+        background-image: url(./img/Gradient.png);
+        background-position: center;
+        background-size: 800px;
+        background-repeat: no-repeat;
+        padding-left: 350px;
+        padding-right: 350px;
+        padding-top: 50px;
+        font-family: "Preahvihear", sans-serif;
+        .textcard{
+            width: 100%;
+            height: 5vh;
+            font-size: 35px;
+            color: #fff;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .cards{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            .leftcards{
+                width: 49%;
+                height: 60vh;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                    height: 29vh;
+                    background: linear-gradient(45deg, #130428, #251043, #38126D, #261045, #190634);
+                    border-radius: 15px;
+                    border-top: #7127BA 4px solid;
+                    display: flex;
+                    font-family: "Poppins", sans-serif;
+                    .leftgatecard{
+                        width: 30%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .rightgatecard{
+                        width: 70%;
+                        height: auto;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        padding: 60px 0;
+                        h2{
+                            color: #fff;
+                            font-size: 26px;
+                        }
+                        p{
+                            color: #fff;
+                            font-size: 14px;
+                        }
+                        button{
+                            width: 140px;
+                            height: 35px;
+                            background-color: #2C1250;
+                            border-radius: 10px;
+                            border: 2px #693B93 solid;
+                            color: #fff;
+                            font-size: 12px;
+                            cursor: pointer;
+                            transition: .3s;
+                        }
+                        button:hover{
+                            transform: scale(1.1);
+                        }
+
+                    }
+                }
+            }
+            .rightcards{
+                width: 49%;
+                height: 60vh;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                    height: 29vh;
+                    background: linear-gradient(45deg, #130428, #251043, #38126D, #261045, #190634);
+                    border-radius: 15px;
+                    border-top: #7127BA 4px solid;
+                    display: flex;
+                    font-family: "Poppins", sans-serif;
+                    .leftgatecard{
+                        width: 30%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .rightgatecard{
+                        width: 70%;
+                        height: auto;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        padding: 60px 0;
+                        
+                        h2{
+                            color: #fff;
+                            font-size: 26px;
+                        }
+                        p{
+                            color: #fff;
+                            font-size: 14px;
+                        }
+                        button{
+                            width: 140px;
+                            height: 35px;
+                            background-color: #2C1250;
+                            border-radius: 10px;
+                            border: 2px #693B93 solid;
+                            color: #fff;
+                            font-size: 12px;
+                            transition: .3s;
+                            cursor: pointer;
+                        }
+                        button:hover{
+                            transform: scale(1.1);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .skilspage{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(14, 1, 32);
+        background-image: url(./img/Skills.png);
+        background-size: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .projectpage{
+        width: 100%;
+        height: 100vh;
+        padding: 50px 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-image: url(./img/Gradient.png);
+        background-size: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Poppins", sans-serif;
+        .project1{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            .leftinfo{
+                width: 60%;
+                height: 40vh;
+                z-index: 2;
+                transform: translateX(50px);
+                .top{
+                    height: 10vh;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-direction: column;
+                    h3{
+                        font-size: 16px;
+                        color: #9857D3;
+
+                    }
+                    h2{
+                        font-size: 34px;
+                        color: #fff;
+                    }
+                }
+                .mid{
+                    height: 20vh;
+                    width: 100%;
+                    background: #683b9360;
+                    backdrop-filter: blur(10px);
+                    border-radius: 14px;
+                    padding: 20px 30px;
+                    transition: .3s;
+                    p{
+                        color: #fff;
+                        filter: none;
+                    }
+                }
+                .mid:hover{
+                    transform: scale(1.1);
+                }
+                .bot{
+                    height: 10vh;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 20px;
+                }
+            }
+            .rightinfo{
+                width: 50%;
+                height: 40vh;
+                background-color: #2B0B3A;
+                z-index: 1;
+                background-image: url(./img/project1.png);
+                background-position: bottom right;
+                background-size: 600px 400px;
+                transition: .3s;
+               
+            }
+            .rightinfo:hover{
+                transform: scale(1.1);
+                z-index: 2;
+                border-radius:30px;
+            }
+        }
+        .project2{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: row-reverse;
+            .leftinfo{
+                width: 60%;
+                height: 40vh;
+                z-index: 2;
+                transform: translateX(-50px);
+                .top{
+                    height: 10vh;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    flex-direction: column;
+                    h3{
+                        font-size: 16px;
+                        color: #9857D3;
+
+                    }
+                    h2{
+                        font-size: 34px;
+                        color: #fff;
+                    }
+                }
+                .mid{
+                    height: 20vh;
+                    width: 100%;
+                    background: #683b9360;
+                    backdrop-filter: blur(10px);
+                    border-radius: 14px;
+                    padding: 20px 30px;
+                    transition: .3s;
+                    p{
+                        color: #fff;
+                        filter: none;
+                    }
+
+                }
+                .mid:hover{
+                    transform: scale(1.1);
+                }
+                .bot{
+                    height: 10vh;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 20px;
+                }
+            }
+            .rightinfo{
+                width: 50%;
+                height: 40vh;
+                background-color: #2B0B3A;
+                z-index: 1;
+                background-image: url(./img/Portfolio.png);
+                background-position: bottom ;
+                background-size: 620px 400px;
+                transition: .3s;
+            }
+            .rightinfo:hover{
+                transform: scale(1.1);
+                z-index: 2;
+                border-radius:30px;
+            }
+        }
+    }
+    .footer{
+        max-height: 60vh;
+        width: 100%;
+        font-family: "Preahvihear", sans-serif;
+        padding: 50px 350px;
+        color: #fff;
+        h2{
+            font-size: 25px;
+
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}   
+    
